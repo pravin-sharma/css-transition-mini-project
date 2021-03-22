@@ -1,0 +1,79 @@
+:root {
+  --page-1-bg-colour: rgb(80, 104, 69);
+  --page-2-bg-colour: green;
+  --page-3-bg-colour: orange;
+  --page-4-bg-colour: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  line-height: 3rem;
+  overflow: hidden;
+}
+
+#page-1 {
+  background-color: var(--page-1-bg-colour);
+}
+#page-2 {
+  background-color: var(--page-2-bg-colour);
+}
+#page-3 {
+  background-color: var(--page-3-bg-colour);
+}
+#page-4 {
+  background-color: var(--page-4-bg-colour);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.page h1 {
+  font-size: 3rem;
+}
+.page p {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 1rem;
+  text-decoration: none;
+  padding: 0.2rem 2rem;
+  border: none;
+  transition: all 0.3s ease-in;
+}
+
+.btn-dark {
+  background-color: black;
+  color: white;
+}
+
+.btn-dark:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-light {
+  background-color: white;
+  color: black;
+}
+
+.btn-light:hover {
+  background-color: black;
+  color: white;
+}
